@@ -1,0 +1,342 @@
+
+@import url("xo-content.css");
+@import url("xo-blocks.css");
+@import url("xo-user.css");
+
+
+/* --------- Layout --------- */
+
+html, body {
+	margin: 0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	width: 100%;
+	background:  #0e6389;	
+	
+	
+    
+	
+}
+
+#top {
+  	background: url(../img/top.png) no-repeat;
+	height:10px;
+	margin: 0 auto;  
+	width: 963px;
+}
+
+#xo-canvas {
+    margin: 0 auto; 
+    padding: 0; 
+	width: 963px;
+	text-align: left;
+	background: url(../img/content.png) repeat-y;
+	
+	
+}
+
+#xo-canvas-content {
+padding-left:0px;
+}
+
+}
+#xo-page {
+	padding-top: 1px;   background: transparent;  
+	
+}
+
+
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;
+  color:#333;
+ 
+  
+    
+}
+
+#header {
+	
+	width: 963px;
+	height: 177px;
+	background: url(../img/header.png) no-repeat;
+
+	
+}
+
+#logo-slogan {
+	
+	width: 500px;
+	height: 60px;
+	margin: 40px 0 0 20px;
+	float: left;
+	
+}
+
+#logo {
+	
+	font-family: Geneva;
+	font-size: 45px;
+	color: #032D48;
+	margin: 0 0 5px 0;
+}
+
+#slogan {
+	
+	float: left;	
+	font-family: Geneva;
+	font-size: 12px;
+	color: #000;
+	font-style: italic ;
+	margin: 5px 0 0 0;
+
+}
+
+#icons {
+	
+	width: 180px;
+	height: 80px;
+	float: right;
+	margin: 30px 0 0 0 ;
+	padding-right:40px;
+}
+
+#icons form {
+	float: right;
+	width: 180px;
+	height: 36px;
+	background: url(../img/search.png);
+
+}
+
+.search {
+	float: left;
+	width: 130px;
+	height: 21px;
+	border: none;	
+	background: none;
+	border: none;
+	font-family: Tahoma;
+	color : #686868;
+	margin: 6px 0 0 10px;
+}
+
+#search_button{
+
+	float: right;
+	width: 26px;
+	height: 26px;
+	border: none;	
+	background: url(../img/srh.png) no-repeat;
+	margin: 4px 2px 4px 0;
+	cursor: pointer;
+    border: none;
+}
+
+#icons img{
+	float: right;
+	margin: 0 25px 0 0;
+	border: none;
+}
+
+
+/* menu */
+
+#menu {
+	float: left;
+	width: 959px;
+	height: 30px;
+	margin: 20px 0px 2px 1px;
+	background: url(../img/menu.gif)  repeat-x;
+	border: 1px solid #7b999e; 
+	
+}
+
+#menu ul {
+	float: left;
+	margin: 0px;
+	padding: 0 0 0 100px;
+	width: 600px;
+	list-style: none;
+	
+}
+
+#menu ul li {
+	display: inline;
+	
+}
+
+#menu ul li a {
+	float: left;
+	padding:  4px  11px 0px 20px;	
+	text-align: center;
+	font-size: 1em;
+	font-weight:bold;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;	
+	outline: none;
+	text-transform:uppercase;
+	
+}
+
+#menu li a:hover, #menu li .current {
+	color: #DFA102;
+}
+
+
+/* end of menu*/
+
+
+
+/* block main menu */
+#mainmenu { padding: 0 0 0 6px;  }
+#mainmenu a {
+  display: block;
+  margin: 0;
+  padding: 4px 4px 4px 14px;
+  
+  font-weight:	bold;
+  color: #1E95CD;
+  font-size: 1.04em;
+   background: url(../img/arrow.gif) no-repeat left;
+  
+}
+#mainmenu a:hover {color: #DFA102;}
+#mainmenu a.menuTop {}
+#mainmenu a.menuMain {}
+#mainmenu a.menuSub {
+  padding-left: 25px;
+  background: none;
+  border: none;
+  font-style: italic;
+  color:#666666;
+  font-size: .9em;
+}
+#mainmenu a.menuSub:hover { color: #DFA102;}
+
+/* block user menu */
+#usermenu {	font-size: .9em; }
+#usermenu a {
+  display: block;
+  margin: 0;
+  padding: 4px 4px 4px 14px;
+  color:#3a3a3a;
+  background: url(../img/arrow.png) no-repeat left;
+}
+#usermenu a:hover {}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color: #A52524;}
+
+
+
+
+#bottom {
+    margin: 0 auto; 
+    height:13px;
+	width: 963px;
+	background: url(../img/bottom.png) no-repeat;
+	
+	
+}
+/* footer */
+#xo-footer { 
+	clear: both; 	
+	color: #fff; 	
+	padding: 0;	 
+	height: 42px;
+	font-size: 1.1em;
+	width: 963px;
+	 margin: 0 auto;
+}
+#xo-footer a { 
+	text-decoration: none; 
+	font-weight: bold;
+	color: #fff; 
+}
+#xo-footer-content {
+	margin: 0 auto;
+	width: 955px
+}
+#xo-footer-content #xo-footer-left {
+	padding: 10px;
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+#xo-footer-content #xo-footer-right {
+	padding: 10px;
+	width: 45%;
+	float: right;
+	text-align: right;
+}
+
+    
+
+
+
+
+
+
+/*-----------------Styles for pagenav ------------*/
+#xo-pagenav {
+    margin:                 7px 0;
+    text-align:             center;
+    font-size:              1.05em;
+}
+#xo-pagenav a {
+    display: block;
+	padding: 2px 6px;
+	float: left;
+	font-size: 1.1em;
+	background: #D6DEE4;
+	-moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 1px;
+}
+#xo-pagenav a:hover {
+    color:                  #1251c6;
+     background:			#eceff2 ;
+    border:                 1px solid #fff;
+}
+.xo-pagact {
+    margin:                 0;
+    padding:                .2em .2em;
+    background: #D6DEE4;
+	-moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 1px;
+}
+
+
+/*======= Tinymce background textarea ========*/
+body.mceContentBody {
+    margin:                 0;
+    padding:                0;
+    background-color:       #fff;
+    background-image:       none;
+    color:                  #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

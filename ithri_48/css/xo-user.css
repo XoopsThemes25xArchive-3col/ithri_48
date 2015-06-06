@@ -1,0 +1,81 @@
+
+#loginpub {
+	width: 960px;
+	height: 74px;
+	overflow: hidden;
+	background: url('../img/user.png') no-repeat;
+	padding-bottom:6px;
+	-moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	margin-left:5px;
+	 
+}
+
+
+
+
+#loginpub .login {
+	float: left;
+	width: 465px;
+}
+#loginpub .login .usernamepassword {
+	float: left;
+	width: 117px;
+	padding-left: 80px;
+	padding-top: 6px;
+}
+#loginpub .login .usernamepassword input[type=text], #loginpub .login .usernamepassword input[type=password] {
+	width: 117px;
+	height:16px;
+}
+#loginpub .login .usernamepassword input[type=password] {
+	padding-top: 4px;
+}
+#loginpub .login .submitlink {
+	float: left;
+	width: 200px;
+	margin-left: 21px;
+	padding-top: 7px;
+}
+/*
+#loginpub .login .submitlink input[type=submit] {
+	font-size: 11px;
+	font-weight: bold;
+	color: #51290a;
+}
+*/
+#loginpub .login .submitlink .link {
+	color: #901212;
+	margin-top: 6px;
+	margin-left: 2px;
+}
+#loginpub .login .submitlink .link a {
+	color: #901212;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#loginpub .login .submitlink .link a:hover {
+	color: #b4b4b4;
+	font-size: 11px;
+	text-decoration: underline;
+}
+#loginpub .pub {
+	float: right ;
+	width: 480px;
+	height:68px;
+	padding-top:4px;
+	
+
+	
+}
+
+.xo-icons{
+	float: right;
+	width: 40px;
+	height:40px;
+	padding-right:35px;
+	padding-top: 16px;
+}

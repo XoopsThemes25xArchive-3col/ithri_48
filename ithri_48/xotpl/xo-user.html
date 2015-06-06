@@ -1,0 +1,58 @@
+
+
+<!-- Login -->
+                    
+<div id="loginpub">
+		<div class="login">
+<{if !$xoops_isuser}>
+			 <form method="post" action="<{xoAppUrl /user.php op=login}>">
+				<div class="usernamepassword">
+					<input name="uname" type="text" title="Pseudo" />
+			<input name="pass" type="password" title="Mot de passe"/>
+			<{if $lang_siteclosemsg}>
+			<input type="hidden" name="xoops_login" value="1" />
+			<{/if}>
+				</div>
+				<div class="submitlink">
+					<div class="submit"><input class="xo-formbuttons" type="submit" value="Connexion" title="Connexion"/></div>
+					<div class="link"><a href="<{xoAppUrl user.php#lost}>" >Mot de passe oublié ?</a>
+					&nbsp;|&nbsp;<b><a href="<{xoAppUrl register.php}>" >S'inscrire !</a></b></div>
+
+				</div>
+			</form>
+			
+			<{else}>
+			 <!-- for my message box  -->
+		<{xoInboxCount assign=pmcount}>
+		<a href="<{xoAppUrl viewpmsg.php}>" title="Messages">
+		<{if $pmcount}>
+			<!-- if I have messages -->
+			<img class="xo-icons" src="<{xoImgUrl icons/users/email_open.png}>"  title="Nouveau Message" />
+		<{else}>
+			<!-- if I do not have a message -->
+			<img class="xo-icons" src="<{xoImgUrl icons/users/email.png}>" title="Messages" />
+		<{/if}>
+		</a>
+		<!-- end my message box-->
+
+		<a href="<{xoAppUrl /notifications.php}>" ><img class="xo-icons" src="<{xoImgUrl icons/users/note_edit.png}>" title="Notifications" /></a>
+		<a href="<{xoAppUrl /user.php}>" ><img class="xo-icons" src="<{xoImgUrl icons/users/vcard_edit.png}>" title="Mon Profil"/></a>
+		
+
+		<!-- additional link if I have rights of administration of module -->
+		<{if $xoops_isadmin}>
+			<a href="<{xoAppUrl /admin.php}>" ><img class="xo-icons" src="<{xoImgUrl icons/users/cog_go.png}>" title="Administration" /></a>
+		<{/if}>
+		<!-- end additional link-->
+
+		<a href="<{xoAppUrl /user.php op=logout}>" ><img class="xo-icons" src="<{xoImgUrl icons/users/exit.png}>" title="Quitter"/></a>
+	<{/if}>
+		</div>
+		<div class="pub" style="">
+ <{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+						<{$xoops_banner|smarty:nodefaults}>
+					<{/if}>
+		</div>
+</div>
+                    
+<!-- Login -->
